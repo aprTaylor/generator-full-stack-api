@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2018 Amimaro <amir.zahlan@gmail.com>
+Copyright (c) 2018 Amanganiello90 <angelo.mang@libero.it> from Amimaro <amir.zahlan@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -2,12 +2,14 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/fc32f4fa319476844aa4/maintainability)](https://codeclimate.com/github/amimaro/generator-angular-api/maintainability)
 
 
-## generator-angular-api
+## generator-full-stack-api
 
 RESTful fullstack generator with [Angular CLI](https://github.com/angular/angular-cli), [Express.js](https://expressjs.com) and [Mongoose](https://mongoosejs.com).
 It has three options of design components, each one with a basic template to start developing, two icons library and authentication with the most used social medias.
 
 [How to create an app for authentication?](./docs/PASSPORT.md)
+
+**Update this project removing not used things (for example automatic client generation with angular-cli for 5)**
 
 ## Generator Installation
 
@@ -15,13 +17,13 @@ First, install [Yeoman](http://yeoman.io) and generator-angular-api using [npm](
 
 ```bash
 npm install -g yo
-npm install -g generator-angular-api
+npm install -g generator-full-stack-api
 ```
 
 Then generate your new project:
 
 ```bash
-yo angular-api
+yo full-stack-api
 ```
 
 ### Getting started
@@ -37,7 +39,7 @@ Run `npm run dev` for a dev server. The browser will load `http://localhost:8080
 To generate a new API endpoit:
 
 ```bash
-yo angular-api:endpoint
+yo full-stack-api:endpoint
 ```
 
 After that you may need to reload the server and the router will load dynamically the route.
@@ -61,7 +63,7 @@ MONGO_DB_URI=mongodb://localhost:27017/angular-api
 Optionally, run the command bellow to generate a fresh .env file.
 
 ```bash
-yo angular-api:dotenv
+yo full-stack-api:dotenv
 ```
 
 ### Client Code scaffolding

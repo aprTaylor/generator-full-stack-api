@@ -41,7 +41,7 @@ for (let s of styles) {
 }
 
 for (let p of prompts) {
-  describe('generator-angular-api:app Front-end: ' + p.style + ', Icon: ' + p.icon + ', Auth: ' + p.auth, () => {
+  describe('generator-full-stack-api:app Front-end: ' + p.style + ', Icon: ' + p.icon + ', Auth: ' + p.auth, () => {
     beforeAll(() => {
       return helpers.run(path.join(__dirname, '../generators/app'))
         .withPrompts({
