@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/fullStackApp/generator-full-stack-api.svg)](https://travis-ci.org/fullStackApp/generator-full-stack-api)
-
 
 [![npm](https://img.shields.io/badge/npm-v8.9.4-green.svg)](https://www.npmjs.com/package/generator-full-stack-api)&nbsp;<img src="https://img.shields.io/github/forks/fullStackApp/generator-full-stack-api.svg">&nbsp;
 <img src="https://img.shields.io/github/stars/fullStackApp/generator-full-stack-api.svg">&nbsp;<a href="https://github.com/fullStackApp/generator-full-stack-api/issues"><img src="https://img.shields.io/github/issues/fullStackApp/generator-full-stack-api.svg">
