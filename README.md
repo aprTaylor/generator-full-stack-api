@@ -3,12 +3,10 @@
 <img src="https://img.shields.io/github/stars/fullStackApp/generator-full-stack-api.svg">&nbsp;<a href="https://github.com/fullStackApp/generator-full-stack-api/issues"><img src="https://img.shields.io/github/issues/fullStackApp/generator-full-stack-api.svg">
 </a>&nbsp;
 
-## generator-full-stack-api [![Build Status](https://travis-ci.org/fullStackApp/generator-full-stack-api.svg)](https://travis-ci.org/fullStackApp/generator-full-stack-api)
+## generator-full-stack-api [![Build Status](https://travis-ci.com/fullStackApp/generator-full-stack-api.svg)](https://travis-ci.com/fullStackApp/generator-full-stack-api)
 
 RESTful fullstack generator with [Angular CLI](https://github.com/angular/angular-cli), [Express.js](https://expressjs.com) and [Mongoose](https://mongoosejs.com).
 
-
-**Update this project removing not used things (for example automatic client generation with angular-cli for 5)**
 
 ## Generator Installation
 
