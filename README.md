@@ -1,11 +1,11 @@
 [![Build Status](https://travis-ci.org/fullStackApp/generator-full-stack-api.svg)](https://travis-ci.org/fullStackApp/generator-full-stack-api)
 
 
-[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/generator-full-stack-api)&nbsp;<img src="https://img.shields.io/github/forks/fullStackApp/generator-full-stack-api.svg">&nbsp;
+[![npm](https://img.shields.io/badge/npm-v8.9.4-green.svg)](https://www.npmjs.com/package/generator-full-stack-api)&nbsp;<img src="https://img.shields.io/github/forks/fullStackApp/generator-full-stack-api.svg">&nbsp;
 <img src="https://img.shields.io/github/stars/fullStackApp/generator-full-stack-api.svg">&nbsp;<a href="https://github.com/fullStackApp/generator-full-stack-api/issues"><img src="https://img.shields.io/github/issues/fullStackApp/generator-full-stack-api.svg">
 </a>&nbsp;
 
-## generator-full-stack-api
+## generator-full-stack-api [![Build Status](https://travis-ci.org/fullStackApp/generator-full-stack-api.svg)](https://travis-ci.org/fullStackApp/generator-full-stack-api)
 
 RESTful fullstack generator with [Angular CLI](https://github.com/angular/angular-cli), [Express.js](https://expressjs.com) and [Mongoose](https://mongoosejs.com).
 
@@ -70,7 +70,7 @@ yo full-stack-api:dotenv
 ### Client Code scaffolding
 
 You can use `ng` [Angular CLI](https://github.com/angular/angular-cli) for to use scaffolding in your project.
-It is used @angular/cli 1.7.4 for Angular 5.
+**It is used @angular/cli 1.7.4 for Angular 5**.
 
 
 ### Back-end
