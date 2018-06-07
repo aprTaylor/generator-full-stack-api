@@ -28,10 +28,8 @@
   "devDependencies": {
     "yeoman-test": "1.7.0",
     "yeoman-assert": "3.1.0",
-    "nsp": "2.6.3",
     "eslint": "4.1.0",
     "prettier": "1.7.0",
-    "husky": "0.14.3",
     "lint-staged": "4.2.1",
     "eslint-config-prettier": "2.4.0",
     "eslint-plugin-prettier": "2.2.0",
