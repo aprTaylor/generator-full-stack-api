@@ -5,9 +5,7 @@
 ## generator-full-stack-api
 
 RESTful fullstack generator with [Angular CLI](https://github.com/angular/angular-cli), [Express.js](https://expressjs.com) and [Mongoose](https://mongoosejs.com).
-It has three options of design components, each one with a basic template to start developing, two icons library and authentication with the most used social medias.
 
-[How to create an app for authentication?](./docs/PASSPORT.md)
 
 **Update this project removing not used things (for example automatic client generation with angular-cli for 5)**
 
