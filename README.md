@@ -1,6 +1,9 @@
-[![npm version](https://badge.fury.io/js/generator-angular-api.svg)](https://badge.fury.io/js/generator-angular-api) [![dependencies Status](https://david-dm.org/amimaro/generator-angular-api/status.svg)](https://david-dm.org/amimaro/generator-angular-api) [![Build Status](https://travis-ci.org/amimaro/generator-angular-api.svg?branch=master)](https://travis-ci.org/amimaro/generator-angular-api)
-[![Maintainability](https://api.codeclimate.com/v1/badges/fc32f4fa319476844aa4/maintainability)](https://codeclimate.com/github/amimaro/generator-angular-api/maintainability)
+[![Build Status](https://travis-ci.org/fullStackApp/generator-full-stack-api.svg)](https://travis-ci.org/fullStackApp/generator-full-stack-api)
 
+
+[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/generator-full-stack-api)&nbsp;<img src="https://img.shields.io/github/forks/fullStackApp/generator-full-stack-api.svg">&nbsp;
+<img src="https://img.shields.io/github/stars/fullStackApp/generator-full-stack-api.svg">&nbsp;<a href="https://github.com/fullStackApp/generator-full-stack-api/issues"><img src="https://img.shields.io/github/issues/fullStackApp/generator-full-stack-api.svg">
+</a>&nbsp;
 
 ## generator-full-stack-api
 
@@ -66,60 +69,9 @@ yo full-stack-api:dotenv
 
 ### Client Code scaffolding
 
-You can use `ng` [Angular CLI](https://github.com/angular/angular-cli) for client scaffolding.
+You can use `ng` [Angular CLI](https://github.com/angular/angular-cli) for to use scaffolding in your project.
+It is used @angular/cli 1.7.4 for Angular 5.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-### Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `client/dist/` directory. Use the `-prod` flag for a production build.
-
-### Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-### Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-### Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-
-## Packages
-
-### Front-end
-
-This front-end was generated based on [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
-
-##### Modules
-
-Angular modules already added.
-
-| Name             | Version                                                                                                         | Docs                                                                                                                | Description                                                     |
-| ---------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| Routes           | [![npm package](https://badge.fury.io/js/%40angular%2Frouter.svg)](https://www.npmjs.com/package/@angular/router) | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://angular.io/api/router/Routes)                | Routes is an array of route configurations.                     |
-| RouterModule     | [![npm package](https://badge.fury.io/js/%40angular%2Frouter.svg)](https://www.npmjs.com/package/@angular/router) | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://angular.io/api/router/RouterModule)          | Adds router directives and providers.                           |
-| HttpClientModule | [![npm package](https://badge.fury.io/js/%40angular%2Fcommon.svg)](https://www.npmjs.com/package/@angular/common) | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://angular.io/api/common/http/HttpClientModule) | NgModule which provides the HttpClient and associated services. |
-| FormsModule      | [![npm package](https://badge.fury.io/js/%40angular%2Fforms.svg)](https://www.npmjs.com/package/@angular/forms)  | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://angular.io/api/forms/FormsModule)            | The ng module for forms.                                        |
-
-##### Design components
-
-The generator has three design options.
-
-| Name             | Version                                                                                         | Docs                                                                                                                            |
-| ---------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Bulma            | [![npm package](https://badge.fury.io/js/bulma.svg)](https://www.npmjs.com/package/bulma)             | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://bulma.io/documentation/overview/start/)                  |
-| Bootstrap        | [![npm package](https://badge.fury.io/js/bootstrap.svg)](https://www.npmjs.com/package/bootstrap)         | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://getbootstrap.com/docs/4.0/getting-started/introduction/) |
-| Angular Material | [![npm package](https://badge.fury.io/js/%40angular%2Fmaterial.svg)](https://www.npmjs.com/package/@angular/material) | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://material.angular.io/components/categories)               |
-
-##### Icons
-
-| Name                                   | Version                                                                                              | Docs                                                                                     |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Font Awesome | [![npm version](https://badge.fury.io/js/font-awesome.svg)](https://badge.fury.io/js/font-awesome)   | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](http://fontawesome.io/)   |
-| Feather   | [![npm version](https://badge.fury.io/js/feather-icons.svg)](https://badge.fury.io/js/feather-icons) | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](http://feathericons.com/) |
 
 ### Back-end
 
@@ -137,7 +89,6 @@ To run locally, requires MongoDB installed and running ([Install MongoDB](https:
 | morgan      | [![npm package](https://badge.fury.io/js/morgan.svg)](https://www.npmjs.com/package/morgan)      | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://github.com/expressjs/morgan)      | HTTP request logger middleware for node.js                                                             |
 | bluebird    | [![npm package](https://badge.fury.io/js/bluebird.svg)](https://www.npmjs.com/package/bluebird)    | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://github.com/petkaantonov/bluebird) | Bluebird is a fully featured promise library with focus on innovative features and performance         |
 | dotenv      | [![npm package](https://badge.fury.io/js/dotenv.svg)](https://www.npmjs.com/package/dotenv)      | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://github.com/motdotla/dotenv)       | Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. |
-| passport    | [![npm version](https://badge.fury.io/js/passport.svg)](https://badge.fury.io/js/passport)      | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](http://www.passportjs.org/docs/)       |  Express-compatible authentication middleware for Node.js. |
 | cookie-parser | [![npm version](https://badge.fury.io/js/cookie-parser.svg)](https://badge.fury.io/js/cookie-parser)      | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://github.com/expressjs/cookie-parser)       |  Parse HTTP request cookies. |
 | express-session | [![npm version](https://badge.fury.io/js/express-session.svg)](https://badge.fury.io/js/express-session)      | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://github.com/expressjs/session)       | Simple session middleware for Express. |
 
@@ -151,27 +102,6 @@ To run locally, requires MongoDB installed and running ([Install MongoDB](https:
 │   │   ├── app.component.spec.ts
 │   │   ├── app.component.ts
 │   │   ├── app.module.ts
-│   │   ├── pages
-│   │   │   ├── home
-│   │   │   │   ├── home.component.css
-│   │   │   │   ├── home.component.html
-│   │   │   │   ├── home.component.spec.ts
-│   │   │   │   └── home.component.ts
-│   │   │   ├── login (for authentication)
-│   │   │   │   ├── login.component.css
-│   │   │   │   ├── login.component.html
-│   │   │   │   ├── login.component.spec.ts
-│   │   │   │   └── login.component.ts
-│   │   │   ├── not-found
-│   │   │   |   ├── not-found.component.css
-│   │   │   |   ├── not-found.component.html
-│   │   │   |   ├── not-found.component.spec.ts
-│   │   │   |    └── not-found.component.ts
-│   │   │   └── profile (for authentication)
-│   │   │       ├── profile.component.css
-│   │   │       ├── profile.component.html
-│   │   │       ├── profile.component.spec.ts
-│   │   │       └── profile.component.ts
 │   │   └── services
 │   │       ├── app.service.spec.ts
 │   │       └── app.service.ts
@@ -204,8 +134,6 @@ To run locally, requires MongoDB installed and running ([Install MongoDB](https:
 ├── server
 │   ├── index.js
 │   ├── config
-│   │   ├── auth.js (for authentication)
-│   │   ├── passport.js (for authentication)
 │   │   └── database.js
 │   ├── lib
 │   │   ├── controller.js
