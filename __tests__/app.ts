@@ -11,7 +11,8 @@ let files = [
 	'.gitignore',
 	'gulpfile.js',
 	'.env',
-	'server'
+	'server',
+	'client/dist/index.html'
 ]
 
 let clientFiles = [

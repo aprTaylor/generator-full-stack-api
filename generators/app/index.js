@@ -59,9 +59,7 @@ module.exports = class extends Generator {
 		files.push('.env');
 		files.push('server');
 
-		if (this.props.client === clientType) {
-			execSync('ng new client --skip-install');
-		}
+		files.push('client/dist/index.html');
 
 		for (let file of files) {
 			this.fs.copyTpl(
@@ -87,8 +85,12 @@ module.exports = class extends Generator {
 		})
 		this.npmInstall().then(() => {
 			this.log('\n\nDone!!')
+			if (this.props.client === clientType) {
+				this.log('Generating Angular 5 client ...\n\n');
+				execSync('npm run new-client');
+			}
 			this.log('Run ' + chalk.green('npm run server:dev') + ' to start server.\n')
-			this.log('If you have generated client, run under client folder' + chalk.green('npm install') + ' and after run ' + chalk.green('npm run dev') + ' to start server with client.\n')
+			this.log('If you have generated client, run ' + chalk.green('npm run dev') + ' to start server with client.\n')
 		})
 	}
 
