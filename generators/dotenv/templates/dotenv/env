@@ -7,14 +7,9 @@ APP_URL=http://localhost:8000/
 # BrowserSync Proxy Url
 CALLBACK_URL=http://localhost:8080/
 
+# Variable to set compatibility with mongodb
+TUNGUS_DB_OPTIONS =  { nativeObjectID: true, searchInArray: true };
+
 # MongodDB Url
 MONGO_DB_URI=mongodb://localhost:27017/<%= slug %>
 
-FACEBOOK_KEY=123456
-FACEBOOK_SECRET=123456
-TWITTER_KEY=123456
-TWITTER_SECRET=123456
-GOOGLE_KEY=123456
-GOOGLE_SECRET=123456
-GITHUB_KEY=123456
-GITHUB_SECRET=123456

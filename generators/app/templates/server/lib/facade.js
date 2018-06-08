@@ -1,4 +1,3 @@
-const mongoose = require('mongoose')
 
 class Facade {
   constructor(schema) {
