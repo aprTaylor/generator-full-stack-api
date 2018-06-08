@@ -1,10 +1,11 @@
 const express    = require('express')
 const app  = express()
 require('dotenv').config()
+const path  = require('path')
 const port         = process.env.PORT || 8000
 const environment  = process.env.NODE_ENV || 'dev'
 const configDB     = require('./config/database')
-const tungus       = require('tungus')
+require('tungus')
 const morgan     = require('morgan')
 const helmet     = require('helmet')
 const bluebird   = require('bluebird')
@@ -18,9 +19,9 @@ mongoose.connect(configDB.mongo.url)
 app.use(helmet())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-app.use(morgan('dev'))
+app.use(morgan(environment))
 
-app.use(express.static(__dirname + '/../client/dist'))
+app.use(express.static(path.join(__dirname,'/../client/dist')))
 app.use('/', routes)
 
 app.listen(port, () => {
