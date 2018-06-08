@@ -4,10 +4,10 @@ require('dotenv').config()
 const port         = process.env.PORT || 8000
 const environment  = process.env.NODE_ENV || 'dev'
 const configDB     = require('./config/database')
+const tungus       = require('tungus')
 const morgan     = require('morgan')
 const helmet     = require('helmet')
 const bluebird   = require('bluebird')
-const tungus     = require('tungus')
 const mongoose   = require('mongoose')
 const bodyParser = require('body-parser')
 const routes = require('./routes')
