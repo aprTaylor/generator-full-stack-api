@@ -2,5 +2,4 @@ node_modules
 coverage
 test-report.xml
 package-lock.json
-package.json
 yarn.lock
