@@ -5,8 +5,8 @@ class Facade {
 	}
 
 	create(body) {
-		const model = new this.model(body);
-		return this.model;
+		let model = new this.model(body);
+		return model;
 	}
 
 	getModel() {

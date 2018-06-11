@@ -18,7 +18,15 @@ class Controller {
 		.find(req.query, function (err, collection) {
 			if (err)
 				return next(err);
-			res.status(200).json(collection)
+			let resObj = [];
+			collection.forEach(function (obj) {
+				obj.id = obj['_id'];
+				delete obj['_id'];
+				delete obj['__v'];
+
+				resObj.push(obj);
+			});
+			res.status(200).json(resObj)
 		})
 
 	}
@@ -40,9 +48,10 @@ class Controller {
 			if (err)
 				return next(err);
 
-			return res.status(200).json(doc);
+			doc['id'] = doc['_id'];
 
-		})
+			return res.status(200).json(doc);
+		});
 
 	}
 
@@ -78,6 +87,6 @@ class Controller {
 
 		})
 	}
-}
 
+}
 module.exports = Controller;
