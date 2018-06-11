@@ -3,6 +3,7 @@
 # compiled output
 /dist/*
 /client/dist/*
+!client/dist/index.html
 /dist-server
 /tmp
 /out-tsc
