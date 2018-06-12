@@ -9,6 +9,22 @@ RESTful fullstack generator with [Angular CLI](https://github.com/angular/angula
 You can also choose a mongo db embedded driver [tungus](https://github.com/sergeyksv/tungus) setting a env variable.
 
 
+
+## NEWS
+
+For every release there is the features list in [CHANGELOG](https://github.com/amanganiello90/generator-full-stack-api/blob/master/CHANGELOG.md)
+
+* Embedded mongodb feature release 1.2.0
+
+June 12,2018  | **Release 1.2.0** | available from [npm](https://www.npmjs.com/package/generator-full-stack-api/v/1.2.0)  |
+---- | ---- | ---- |
+
+* First Release 1.0.1
+
+June 09,2018  | **Release 1.0.1** | available from [npm](https://www.npmjs.com/package/generator-full-stack-api/v/1.0.1)  |
+---- | ---- | ---- |
+
+
 ## Generator Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-angular-api using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
@@ -94,6 +110,55 @@ MONGO_EMBEDDED=true
 ```
 
 In this way the objects are saved as a file under the config folder.
+
+
+#### Api exposed
+
+On default, it is created an **users** entity with this schema:
+
+
+```
+const userSchema = new Schema({
+		id: {
+			type: String,
+			required: true
+		},
+		username: {
+			type: String,
+			required: true
+		},
+		email: {
+			type: String
+		},
+		firstname: {
+			type: String,
+			required: true
+		},
+		lastname: {
+			type: String,
+			required: true
+		}
+	});
+```
+
+
+All CRUD endpoint operations are:
+
+* api/users : Get Request that returns all users entities created (empty collection object if nothing exists)
+* api/users : Post Request that creates a user with a request mapping its fields. On success it returns the user created.
+* api/users/{id} : Get Request that returns an user entity with the specified id (else 404 status if not exists)
+* api/users/{id} : Delete Request that deletes an user entity with the specified id. On success it returns the 204 status else 404 .
+* api/users/{id} : Put Request that updates the user with a specified id according your request fields. On success it returns the 204 status else 404 .
+
+You can generate another entity and endpoint with:
+
+```bash
+yo full-stack-api:endpoint
+```
+
+So you will have every previous CRUD operation endpoints with the initial suffix **api/<entity-name>** .
+
+
 
 ##### Main Packages
 
