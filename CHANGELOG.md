@@ -1,6 +1,6 @@
 # generator-full-stack-api
 
-## [1.2.0] Embedded mongodb feature release - 12-06-2018
+## [2.0.0] Embedded mongodb feature release - 12-06-2018
 
 - 11/06/2018 modify and testing api controller with 3.6.x mongoose api
 - 10/06/2018 downgrading mongoose version to 3.6.20 in order to support tungus driver

@@ -14,9 +14,9 @@ You can also choose a mongo db embedded driver [tungus](https://github.com/serge
 
 For every release there is the features list in [CHANGELOG](https://github.com/fullStackApp/generator-full-stack-api/blob/master/CHANGELOG.md)
 
-* Embedded mongodb feature release 1.2.0
+* Embedded mongodb feature release 2.0.0
 
-June 12,2018  | **Release 1.2.0** | available from [npm](https://www.npmjs.com/package/generator-full-stack-api/v/1.2.0)  |
+June 12,2018  | **Release 2.0.0** | available from [npm](https://www.npmjs.com/package/generator-full-stack-api/v/2.0.0)  |
 ---- | ---- | ---- |
 
 * First Release 1.0.1
