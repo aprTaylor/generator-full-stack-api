@@ -56,7 +56,7 @@ module.exports = class extends Generator {
 
 		files.push('package.json');
 		files.push('.env');
-		files.push('server');
+		files.push('api');
 
 		if (this.props.client === clientType) {
 			files.push('client');

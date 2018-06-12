@@ -2,14 +2,14 @@
 	"name": "<%= name %>",
 	"version": "1.0.0",
 	"license": "MIT",
-	"main": "server/index.js",
+	"main": "api/index.js",
 	"description": "<%= description %>",
 	"scripts": {
 		"client": "cd client && ng serve -o",
 		"build.prod": "cd client && ng build --prod",
 		"watch": "cd client && ng build --watch",
-		"start": "node server/index.js",
-		"server:dev": "nodemon --watch server server/index.js",
+		"start": "node api/index.js",
+		"server:dev": "nodemon --watch api api/index.js",
 		"dev": "concurrently \"npm run watch\" \"gulp\""
 	},
 	"private": true,
@@ -22,7 +22,6 @@
 		"helmet": "3.1.0",
 		"mongoose": "3.6.20",
 		"morgan": "1.7.0",
-		"path": "0.12.7",
 		"tungus": "0.0.5"
 	},
 	"devDependencies": {

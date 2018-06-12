@@ -20,9 +20,8 @@ class Controller {
 				return next(err);
 			let resObj = [];
 			collection.forEach(function (obj) {
-				obj.id = obj['_id'];
-				delete obj['_id'];
-				delete obj['__v'];
+
+				obj['id'] = obj['_id'];
 
 				resObj.push(obj);
 			});

@@ -1,11 +1,12 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
-const path = require('path');
 const port = process.env.PORT || 8000;
 const environment = process.env.NODE_ENV || 'dev';
 const configDB = require('./config/database');
-require('tungus');
+if (process.env.MONGO_EMBEDDED === 'true'){
+	require('tungus');
+}
 const morgan = require('morgan');
 const helmet = require('helmet');
 const bluebird = require('bluebird');
@@ -23,7 +24,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 app.use(morgan(environment));
 
-app.use(express.static(path.join(__dirname, '/../client/dist')));
+app.use(express.static(__dirname + '/../client/dist'));
 app.use('/', routes);
 
 app.listen(port, () => {

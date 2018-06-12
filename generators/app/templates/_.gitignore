@@ -8,8 +8,8 @@
 /dist-server
 /tmp
 /out-tsc
-server/config/*
-!server/config/*.js
+api/config/*
+!api/config/*.js
 
 # environment
 .env
