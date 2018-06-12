@@ -12,7 +12,7 @@ You can also choose a mongo db embedded driver [tungus](https://github.com/serge
 
 ## NEWS
 
-For every release there is the features list in [CHANGELOG](https://github.com/amanganiello90/generator-full-stack-api/blob/master/CHANGELOG.md)
+For every release there is the features list in [CHANGELOG](https://github.com/fullStackApp/generator-full-stack-api/blob/master/CHANGELOG.md)
 
 * Embedded mongodb feature release 1.2.0
 
