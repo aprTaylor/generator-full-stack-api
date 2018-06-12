@@ -40,14 +40,14 @@ Then generate your new project:
 yo full-stack-api
 ```
 
-### Run all stack in whatching mode
+### Run all stack in watching mode
 
 ```bash
 npm run dev
 ```
 
 Run `npm run dev` for a dev server. The browser will load `http://localhost:8080/`. Wait until the app is built. At any change, the app will automatically rebuild and sync the browser.
-In this way you run server and front end app concurrently in whatching development mode.
+In this way you run server and front end app concurrently in watching development mode.
 
 ### Client tasks
 
@@ -185,8 +185,8 @@ You can generate another entity and endpoint with:
 yo full-stack-api:endpoint
 ```
 
-So you will have every previous CRUD operation endpoints with the initial suffix **api/<entity-name>** .
-After this, you have only to change under **api/model/<entity-name>/schema.js** the fields of your document.
+So you will have every previous CRUD operation endpoints with the initial suffix **api/entity-name** .
+After this, you have only to change under **api/model/entity-name/schema.js** the fields of your document.
 
 
 
@@ -203,35 +203,47 @@ After this, you have only to change under **api/model/<entity-name>/schema.js** 
 | tungus      | [![npm package](https://badge.fury.io/js/tungus.svg)](https://www.npmjs.com/package/tungus)      | [![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://github.com/sergeyksv/tungus)       | Mongoose driver for TingoDB embedded database . |
 
 ## File tree
+
 ```
 ├── client
-│   ├── app
-│   │   ├── app.component.css
-│   │   ├── app.component.html
-│   │   ├── app.component.spec.ts
-│   │   ├── app.component.ts
-│   │   ├── app.module.ts
-│   │   └── services
-│   │       ├── app.service.spec.ts
-│   │       └── app.service.ts
-│   ├── assets
-│   ├── environments
-│   │   ├── environment.prod.ts
-│   │   └── environment.ts
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── main.ts
-│   ├── polyfills.ts
-│   ├── styles.css
-│   ├── test.ts
-│   ├── tsconfig.app.json
-│   ├── tsconfig.spec.json
-│   └── typings.d.ts
-│   └── typings.d.ts
-├── e2e
-│   ├── app.e2e-spec.ts
-│   ├── app.po.ts
-│   └── tsconfig.e2e.json
+│   ├── src     
+│   │   ├──app
+│   │   │   ├── app.component.css
+│   │   │   ├── app.component.html
+│   │   │   ├── app.component.spec.ts
+│   │   │   ├── app.component.ts
+│   │   │   ├── app.module.ts
+│   │   │ 
+│   │   ├── assets
+│   │   ├── environments
+│   │   │   ├── environment.prod.ts
+│   │   │   └── environment.ts
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── main.ts
+│   │   ├── polyfills.ts
+│   │   ├── styles.css
+│   │   ├── test.ts
+│   │   ├── tsconfig.app.json
+│   │   ├── tsconfig.spec.json
+│   │   └── typings.d.ts
+│   │   
+│   │
+│   ├── e2e
+│   │   ├── app.e2e-spec.ts
+│   │   ├── app.po.ts
+│   │   └── tsconfig.e2e.json
+│   │
+│   ├── .angular-cli.json
+│   ├── .editorconfig
+│   ├── .gitignore
+│   ├── karma.conf.js
+│   ├── package.json
+│   ├── protactor.conf.js
+│   ├── README.md
+│   ├── tsconfig.json
+│   ├── tslint.json
+│
 ├── .gitignore
 ├── .env
 ├── gulpfile.js
