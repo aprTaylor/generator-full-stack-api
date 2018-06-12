@@ -40,13 +40,42 @@ Then generate your new project:
 yo full-stack-api
 ```
 
-### Getting started
+### Run all stack in whatching mode
 
 ```bash
 npm run dev
 ```
 
 Run `npm run dev` for a dev server. The browser will load `http://localhost:8080/`. Wait until the app is built. At any change, the app will automatically rebuild and sync the browser.
+In this way you run server and front end app concurrently in whatching development mode.
+
+### Client tasks
+
+To build your angular app you can run:
+
+```bash
+npm run build.prod
+```
+
+to serving:
+
+```bash
+npm run client
+```
+
+### Run all stack without build frontend code
+
+```bash
+npm start
+```
+
+With this command you execute the api server loading the **client/dist** part that you have already built.
+It's the same to run 
+
+```bash
+node api/index.js
+```
+
 
 ##### Creating API endpoints
 
@@ -88,7 +117,7 @@ yo full-stack-api:dotenv
 
 ### Client Code scaffolding
 
-When you run **yo full-stack-api**, you can choose to generate the client code from [Angular CLI](https://github.com/angular/angular-cli). **It is used @angular/cli 1.7.4 for Angular 5**.
+When you run **yo full-stack-api**, you can choose to generate the client code compliant with [Angular CLI](https://github.com/angular/angular-cli). **It is used @angular/cli 1.7.4 for Angular 5**.
 
 
 ### Back-end
@@ -157,6 +186,7 @@ yo full-stack-api:endpoint
 ```
 
 So you will have every previous CRUD operation endpoints with the initial suffix **api/<entity-name>** .
+After this, you have only to change under **api/model/<entity-name>/schema.js** the fields of your document.
 
 
 
