@@ -19,14 +19,14 @@ module.exports = class extends Generator {
 
   writing() {
 
-    if (this.fs.exists(this.destinationPath('server/model/' + to.slug(this.props.endpoint) + '/constroller.js'))) {
+    if (this.fs.exists(this.destinationPath('api/model/' + to.slug(this.props.endpoint) + '/constroller.js'))) {
       this.log(`Endpoint ${to.slug(this.props.endpoint)} already exists`);
       return;
     }
 
     this.fs.copyTpl(
       this.templatePath('endpoint/'),
-      this.destinationPath('server/model/' + to.slug(this.props.endpoint)), {
+      this.destinationPath('api/model/' + to.slug(this.props.endpoint)), {
         camel: to.camel(this.props.endpoint),
         pascal: to.pascal(this.props.endpoint),
         slug: to.slug(this.props.endpoint)
