@@ -24,6 +24,9 @@ June 12,2018  | **Release 2.0.0** | available from [npm](https://www.npmjs.com/p
 June 09,2018  | **Release 1.0.1** | available from [npm](https://www.npmjs.com/package/generator-full-stack-api/v/1.0.1)  |
 ---- | ---- | ---- |
 
+## NEXT DEVELOPMENTS (checked in progress)
+
+- [x] Automatize with a generator the node app using electron and cordova. Refine DTS. Remember [CORDOVA README](https://github.com/amanganiello90/java-angular-web-app/blob/master/cordova-app/README.md)
 
 ## Generator Installation
 
@@ -256,17 +259,14 @@ After this, you have only to change under **api/model/entity-name/schema.js** th
 │   │   ├── controller.js
 │   │   └── facade.js
 │   ├── model
-│   │   ├── food
-│   │   │   ├── controller.js
-│   │   │   ├── facade.js
-│   │   │   ├── router.js
-│   │   │   └── schema.js
+│   │   │
 │   │   └── user
 │   │       ├── controller.js
 │   │       ├── facade.js
 │   │       ├── router.js
-│   │       └── schema.js
-│   └── routes.js
+│   │       └── schema.js   
+│   │  
+│   └── routes.js   
 
 ```
 
