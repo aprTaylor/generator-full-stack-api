@@ -2,11 +2,12 @@
 
 
 # compiled output
-**/dist/*
-/angular-project/dist/*
-!angular-project/dist/index.html
-**/tmp
-**/out-tsc
+/dist/*
+/client/dist/*
+!client/dist/index.html
+/dist-server
+/tmp
+/out-tsc
 # api/config/*
 # !api/config/*.js
 
@@ -14,37 +15,37 @@
 .env
 
 # dependencies
-**/node_modules
+/node_modules
 
 # IDEs and editors
-**/.idea
-**/.project
-**/.classpath
-**/.c9/
-**/*.launch
-**/.settings/
-**/*.sublime-workspace
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
 # IDE - VSCode
-**/.vscode/*
+.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
 # misc
-**/.sass-cache
-**/connect.lock
-**/coverage
-**/libpeerconnection.log
-**/npm-debug.log
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
 testem.log
-**/typings
+/typings
 
 # e2e
 /e2e/*.js
 /e2e/*.map
 
 # System Files
-**/.DS_Store
-**/Thumbs.db
+.DS_Store
+Thumbs.db

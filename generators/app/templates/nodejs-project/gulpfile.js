@@ -14,10 +14,10 @@ gulp.task('browser-sync', ['nodemon'], function() {
 gulp.task('nodemon', function (cb) {
   var called = false;
   return nodemon({
-    script: 'server/index.js',
+    script: 'api/index.js',
     ignore: [
       'gulpfile.js',
-      'client/',
+	  'dist/',
       'node_modules/'
     ]
   })
@@ -35,5 +35,5 @@ gulp.task('nodemon', function (cb) {
 });
 
 gulp.task('default', ['browser-sync'], function () {
-  gulp.watch(['client/dist/index.html'], reload);
+  gulp.watch(['../angular-project/dist/index.html'], reload);
 });

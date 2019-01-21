@@ -5,10 +5,11 @@
 	"main": "api/index.js",
 	"description": "<%= description %>",
 	"scripts": {
-		"client": "cd client && ng serve -o",
-		"build.prod": "cd client && ng build --prod",
-		"watch": "cd client && ng build --watch",
-		"start": "node api/index.js",
+		"preconfig": "cpx  \"../angular-project/dist/**/*.*\"  dist -C -p  && cd dist && cd .. ",
+		"client": "cd ../angular-project && ng serve -o",
+		"build.prod": "cd ../angular-project && ng build --prod",
+		"watch": "cd ../angular-project && ng build --watch",
+		"start": "npm run preconfig && node api/index.js",
 		"server:dev": "nodemon --watch api api/index.js",
 		"dev": "concurrently \"npm run watch\" \"gulp\""
 	},

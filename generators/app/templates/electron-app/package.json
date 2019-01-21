@@ -1,0 +1,62 @@
+{
+	"name": "electron-app",
+	"description": "Demonstrates spawning Express from Electron and using it to serve content or create a standalone package",
+	"version": "1.0.0",
+	"main": "main.js",
+	"author": {
+		"name": "Angelo Manganiello",
+		"email": "angelo.mang@libero.it"
+	},
+	"license": "Apache-2.0",
+	"scripts": {
+		"copy.server": "cpx  \"../nodejs-project/api/**/*.*\"  api -C -p  && cd api && cd .. ",
+		"copy.client": "cpx  \"../nodejs-project/dist/**/*.*\"  dist -C -p  && cd dist && cd .. ",
+		"preconfig": "npm run copy.server && npm run copy.client",
+		"start": "npm run preconfig && electron .",
+		"package": "npm run preconfig && build"
+	},
+	"build": {
+		"productName": "electron-app",
+		"npmRebuild": "false",
+		"asar": false,
+		"directories": {
+			"output": "distribution"
+		},
+		"win": {
+			"icon": "icon.png",
+			"target": [
+				"portable"
+			]
+		},
+		"mac": {
+			"icon": "icon.png",
+			"target": [
+				"dmg"
+			]
+		},
+		"linux": {
+			"icon": "icon.png",
+			"target": [
+				"AppImage"
+			]
+		}
+	},
+	"devDependencies": {
+		"cpx": "1.5.0",
+		"electron": "1.8.2",
+		"electron-builder": "20.15.1"
+	},
+	"dependencies": {
+		"bluebird": "3.4.6",
+		"body-parser": "1.15.2",
+		"dotenv": "4.0.0",
+		"express": "4.16.2",
+		"jquery": "3.3.1",
+		"keymaster": "1.6.2",
+		"lodash": "4.17.4",
+		"mongoose": "3.6.20",
+		"morgan": "1.7.0",
+		"request": "2.83.0",
+		"tungus": "0.0.5"
+	}
+}

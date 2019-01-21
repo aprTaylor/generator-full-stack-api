@@ -26,6 +26,7 @@ June 09,2018  | **Release 1.0.1** | available from [npm](https://www.npmjs.com/p
 
 ## NEXT DEVELOPMENTS (checked in progress)
 
+- [x] Start new DTS with cordova and electron. Refactor nodejs-project package to insert client task in angular-project 
 - [x] Automatize with a generator the node app using electron and cordova. Refine DTS. Remember [CORDOVA README](https://github.com/amanganiello90/java-angular-web-app/blob/master/cordova-app/README.md)
 - [ ] Add support for docker-compose as [generator-api](https://github.com/ndelvalle/generator-api)
 - [ ] Add support for security oauth2 as [rest-security-example](https://github.com/diegohaz/generator-rest-example)
