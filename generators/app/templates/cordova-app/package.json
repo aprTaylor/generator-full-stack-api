@@ -5,9 +5,10 @@
     "description": "A sample Apache Cordova application to integrate nodejs full app.",
     "main": "index.js",
     "scripts": {
+        "copy.node.project": "cpx  \"../nodejs-project/**/*.*\"  www/nodejs-project -C -p  && cd www/nodejs-project && cd ../.. ",
         "build": "cordova prepare android && cordova build android",
         "start": "cordova prepare android && cordova run android",
-        "preconfig": "cd ./www/nodejs-project && npm install"
+        "preconfig": "npm run copy.node.project && cd ./www/nodejs-project && npm install"
     },
     "author": {
         "name": "Angelo Manganiello",
@@ -19,7 +20,7 @@
         "cordova": "7.0.0"
     },
     "dependencies": {
-	    "acorn": "6.0.5",
+	      "acorn": "6.0.5",
         "cordova-android": "6.3.0",
         "cordova-plugin-whitelist": "1.3.3",
         "nodejs-cordova-plugin": "2.0.0"
