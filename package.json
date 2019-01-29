@@ -1,6 +1,6 @@
 {
 	"name": "generator-full-stack-api",
-	"version": "2.0.0",
+	"version": "2.1.0",
 	"description": "Simple REST angular fullstack generator",
 	"homepage": "",
 	"author": {
@@ -23,7 +23,9 @@
 		"express",
 		"node",
 		"fullstack",
-		"yeoman-generator"
+		"yeoman-generator",
+		"electron",
+	    "cordova"
 	],
 	"devDependencies": {
 		"yeoman-test": "1.7.0",

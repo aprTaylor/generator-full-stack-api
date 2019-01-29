@@ -1,5 +1,7 @@
 # generator-full-stack-api
 
+## [2.1.0] Electron/Cordova feature release - XX-XX-2019
+
 ## [2.0.0] Embedded mongodb feature release - 12-06-2018
 
 - 11/06/2018 modify and testing api controller with 3.6.x mongoose api

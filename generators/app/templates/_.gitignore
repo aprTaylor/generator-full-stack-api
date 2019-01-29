@@ -1,17 +1,17 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 
-# compiled output
+#  general compiled output
 **/dist/*
-/angular-project/dist/*
-!angular-project/dist/index.html
+!nodejs-project/dist/index.html
 **/tmp
 **/out-tsc
-# api/config/*
-# !api/config/*.js
+# nodejs-project/api/config/*
+# !nodejs-project/api/config/*.js
 
-# environment
-.env
+######START Angular compiled output
+/angular-project/dist/*
+!angular-project/dist/index.html
 
 # dependencies
 **/node_modules
@@ -27,10 +27,10 @@
 
 # IDE - VSCode
 **/.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+!angular-project/.vscode/settings.json
+!angular-project/.vscode/tasks.json
+!angular-project/.vscode/launch.json
+!angular-project/.vscode/extensions.json
 
 # misc
 **/.sass-cache
@@ -42,8 +42,43 @@ testem.log
 **/typings
 
 # e2e
-/e2e/*.js
-/e2e/*.map
+angular-project//e2e/*.js
+angular-project//e2e/*.map
+
+######END Angular compiled output
+
+######START Electron compiled output
+electron-app/package-lock.json
+electron-app/node_modules
+electron-app/distribution
+electron-app/dist
+electron-app/api/config/users
+
+######END Electron compiled output
+
+
+######START Cordova compiled output
+cordova-app/node_modules
+cordova-app/package-lock.json
+cordova-app/app/package-lock.json
+cordova-app/app/node_modules
+cordova-app/app/www/nodejs-project/node_modules
+cordova-app/app/www/nodejs-project/package-lock.json
+cordova-app/app/www/nodejs-project/yarn.lock
+#cordova-app/app/**/www/*
+#!cordova-app/app/**/www/.gitkeep
+cordova-app/app/**/build
+cordova-app/app/platforms/*
+#!cordova-app/app/platforms/*.json
+!cordova-app/app/platforms/.gitkeep
+cordova-app/app/plugins/*
+#!cordova-app/app/plugins/*.json
+
+######END Cordova compiled output
+
+
+# environment
+.env
 
 # System Files
 **/.DS_Store
