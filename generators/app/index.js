@@ -55,7 +55,7 @@ module.exports = class extends Generator {
 				}
 			]).then((answers) => {
 			this.props = answers;
-			this.props.packs = '';
+			this.props.packs = '/nodejs-project';
 			this.log('\n\n');
 			this.log(chalk.yellow('Name: ' + answers.name));
 			this.log(chalk.yellow('Description: ' + answers.description));
@@ -106,10 +106,11 @@ module.exports = class extends Generator {
 
 	install() {
         
-		this.npmInstall(this.props.packs.split(' ')+'/nodejs-project', {
+		this.npmInstall(this.props.packs, {
 			'save': true
 		})
 		this.npmInstall().then(() => {
+      process.chdir(process.cwd() + '/..');
 			this.log('\n\nDone!!')
 			this.log('Run ' + chalk.green('npm run server:dev') + ' to start server.\n')
 			this.log('If you have generated client, run ' + chalk.green('npm install') + ' on angular-project folder, and after ' + chalk.green('npm run dev') + ' to start server with client.\n')
