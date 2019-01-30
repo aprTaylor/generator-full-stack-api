@@ -102,11 +102,11 @@ module.exports = class extends Generator {
 			name: this.props.name,
 			description: this.props.description
 		})
-
+    process.chdir(process.cwd() + '/nodejs-project');
 	}
 
 	install() {
-        process.chdir(process.cwd() + '/nodejs-project');
+        
 		this.npmInstall(this.props.packs.split(' '), {
 			'save': true
 		})
