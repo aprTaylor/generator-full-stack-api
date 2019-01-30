@@ -83,7 +83,7 @@ module.exports = class extends Generator {
 		if (this.props.electron === electronType) {
 			files.push('electron-app');
 		} 
-		if (this.props.electron === cordovaType) {
+		if (this.props.cordova === cordovaType) {
 			files.push('cordova-app');
 		} 
 
@@ -111,6 +111,7 @@ module.exports = class extends Generator {
 			'save': true
 		})
 		this.npmInstall().then(() => {
+			process.chdir(process.cwd() + '/..');
 			this.log('\n\nDone!!')
 			this.log('Run ' + chalk.green('npm run server:dev') + ' to start server.\n')
 			this.log('If you have generated client, run ' + chalk.green('npm install') + ' on angular-project folder, and after ' + chalk.green('npm run dev') + ' to start server with client.\n')
