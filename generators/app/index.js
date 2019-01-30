@@ -55,7 +55,7 @@ module.exports = class extends Generator {
 				}
 			]).then((answers) => {
 			this.props = answers;
-			this.props.packs = '/nodejs-project';
+			this.props.packs = './nodejs-project';
 			this.log('\n\n');
 			this.log(chalk.yellow('Name: ' + answers.name));
 			this.log(chalk.yellow('Description: ' + answers.description));
@@ -72,7 +72,8 @@ module.exports = class extends Generator {
 	writing() {
 
 		let files = [
-			'README.md'
+			'README.md',
+			'package.json'
 		]
 
 		files.push('nodejs-project');

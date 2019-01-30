@@ -1,9 +1,9 @@
 {
-	"name": "<%= name %>",
+	"name": "<%= name %>-server",
 	"version": "2.0.0",
 	"license": "MIT",
 	"main": "api/index.js",
-	"description": "<%= description %>",
+	"description": "Server module: <%= description %>",
 	"scripts": {
 		"preconfig": "cpx  \"../angular-project/dist/**/*.*\"  dist -C -p  && cd dist && cd .. ",
 		"client": "cd ../angular-project && ng serve -o",

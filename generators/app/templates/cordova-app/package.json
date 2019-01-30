@@ -1,7 +1,7 @@
 {
     "name": "<%= name %>-cordova-app",
     "version": "2.0.0",
-    "description": "A sample Apache Cordova application to integrate nodejs full app.",
+    "description": "Cordova module: <%= description %>",
     "main": "index.js",
     "scripts": {
         "copy.node.project": "cpx  \"../nodejs-project/**/*.*\"  www/nodejs-project -C -p  && cd www/nodejs-project && cd ../.. ",

@@ -11,6 +11,7 @@ let files = [
 	'README.md',
 	'nodejs-project/package.json',
 	'.gitignore',
+	'package.json',
 	'nodejs-project/gulpfile.js',
 	'nodejs-project/api',
 	'nodejs-project/dist/index.html'

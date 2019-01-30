@@ -1,6 +1,6 @@
 {
 	"name": "<%= name %>-electron-app",
-	"description": "Demonstrates spawning Express from Electron and using it to serve content or create a standalone package",
+	"description": "Electron module: <%= description %>",
 	"version": "2.0.0",
 	"main": "main.js",
 	"author": {
